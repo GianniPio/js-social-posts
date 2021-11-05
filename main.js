@@ -17,3 +17,62 @@
 
 // 3. Rendere il tasto like cliccabile e aumentare il numero di like 
 
+
+// Creazione dell'array di oggetti
+
+const post = 
+
+[
+
+    {
+        'nomeAutore' : "Phil Mangione",
+        'dataPost' : 1,
+        'testoPost' : "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
+        'immaginePost' : "https://unsplash.it/300/300?image=",
+        'numberLikes' : 80
+    },
+
+    {
+        'nomeAutore' : "Gianni Pio Pellegrino",
+        'dataPost' : 2,
+        'testoPost' : "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
+        'immaginePost' : "https://unsplash.it/300/300?image=",
+        'numberLikes' : 120
+    },
+
+    {
+        'nomeAutore' : "Jon Snow",
+        'dataPost' : 5,
+        'testoPost' : "Non c'è vergogna nell'avere paura, mi diceva sempre mio padre. Quello che conta è come l'affrontiamo.",
+        'immaginePost' : "https://unsplash.it/300/300?image=",
+        'numberLikes' : 2
+    },
+
+    {
+        'nomeAutore' : "Simone Icardi",
+        'dataPost' : 5,
+        'testoPost' : "Come va?",
+        'immaginePost' : "https://unsplash.it/300/300?image=",
+        'numberLikes' : 1
+    },
+
+    {
+        'nomeAutore' : "Mario Rossi",
+        'dataPost' : 7,
+        'testoPost' : "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.",
+        'immaginePost' : "https://unsplash.it/300/300?image=",
+        'numberLikes' : 89
+    },
+
+    {
+        'nomeAutore' : "Giulio Cesare",
+        'dataPost' : 4,
+        'testoPost' : "Tu quoque, Brute, fili mi?",
+        'immaginePost' : "https://unsplash.it/300/300?image=",
+        'numberLikes' : 80
+    }
+
+]
+
+console.log(post);
+
