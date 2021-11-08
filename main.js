@@ -82,15 +82,9 @@ for (let i = 0; i < posts.length; i++) {
     
     const {nomeAutore, dataPost, testoPost, immaginePost, numberLikes} = posts[i];
 
-    if (immaginePost[i] == "") {
-        
-     stampaPostImmagine(nomeAutore, dataPost, testoPost, i, numberLikes);
-        
-    } else {
 
-     stampaWithoutIMG(nomeAutore, dataPost, testoPost, immaginePost, i, numberLikes);
+     stampaPost(nomeAutore, dataPost, testoPost, immaginePost, i, numberLikes);
 
-    }
     
 }
 
@@ -100,42 +94,9 @@ for (let i = 0; i < posts.length; i++) {
 
 
  
-function stampaPostImmagine(elem1, elem2, elem3, number ,elem4) {
 
-    contenitore.innerHTML +=
-        `
-        <div class="post">
-            <div class="post__header">
-                <div class="post-meta">                    
-                    <div class="post-meta__icon">
-                        <img class="profile-pic" src="https://unsplash.it/300/300?image=15" alt="Phil Mangione">                    
-                    </div>
-                    <div class="post-meta__data">
-                        <div class="post-meta__author">${elem1}</div>
-                        <div class="post-meta__time">${elem2}</div>
-                    </div>                    
-                </div>
-            </div>
-            <div class="post__text">${elem3}</div>
-            <div class="post__footer">
-                <div class="likes js-likes">
-                    <div class="likes__cta">
-                        <a class="like-button  js-like-button" data-postid=${number}>
-                            <i class="like-button__icon fas fa-thumbs-up" aria-hidden="true"></i>
-                            <span class="like-button__label">Mi Piace</span>
-                        </a>
-                    </div>
-                    <div class="likes__counter">
-                        Piace a <b id="like-counter-1" class="js-likes-counter">${elem4}</b> persone
-                    </div>
-                </div> 
-            </div>            
-        </div>
-        
-        `
-}
 
-function stampaWithoutIMG(elem1, elem2, elem3, elem4, number, elem5) {
+function stampaPost(elem1, elem2, elem3, elem4, number, elem5) {
 
     contenitore.innerHTML +=
     `
